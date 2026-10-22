@@ -1,0 +1,16 @@
+A binary tree works well for showing how doctors are connected in a hospital's reporting structure.
+ It gives us a way to see how the hierarchy is organized, starting with the top doctor and moving down to other doctors.
+ Each doctor can have a left and right child, which helps organize the relationships between them.
+
+The three tree traversal methods are useful because they let us look at the structure in different ways.
+ Preorder starts with the current doctor before moving to the left and right branches.
+ This is helpful when we want to see the reporting structure from the top down. Inorder visits the left branch first,
+ then the current doctor, and finally the right branch. This gives us another way to review the structure, although it
+ does not automatically put the doctors in alphabetical order. Postorder visits the children before the current doctor, 
+ which could be useful when we want to review the lower levels of the hierarchy before moving up to supervisors.
+
+A min-heap makes sense for the emergency intake system because patients need to be prioritized based on how urgent their cases are. 
+ Each patient receives an urgency score from 1 to 10, with 1 being the most urgent. The heap keeps the patient with the lowest number
+ at the top, making it easier to identify who should be seen next. When a new patient is added or the current patient is removed, the 
+ heap adjusts itself to keep the priorities organized. In a real hospital, staff would still need to follow proper medical triage procedures 
+ to make sure patients receive the care they need.
